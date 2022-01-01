@@ -1,0 +1,47 @@
+body {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-blend-mode: overlay;
+    background-color: #000000c9;
+}
+
+.buttons {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons div {
+    font-size: 50px;
+    color: white;
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active {
+    background: yellow;
+    color: black;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 425px) {
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px auto;
+        justify-items: center;
+    }
+}
+
